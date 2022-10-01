@@ -235,7 +235,7 @@
     document.querySelector('#initDataUnsafe').innerHTML = JSON.stringify(initDataUnsafe, null, 2);
     document.querySelector('#themeData').html(JSON.stringify(Telegram.WebApp.themeParams, null, 2));
 
-    Telegram.WebApp.MainButton
+    window.Telegram.WebApp.MainButton
         .text('CLOSE WEBVIEW')
         .show()
         .onClick(Telegram.WebApp.close());
