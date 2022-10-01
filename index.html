@@ -182,7 +182,8 @@
 <body>
 
 <section>
-    <h1 id="greeting"></h1>
+  <h1 id="greeting"></h1>
+  <h1 id="info"></h1>
 
     <div id="buttons">
         <button onclick="webviewExpand();">Expand Webview</button>
@@ -231,8 +232,10 @@
     const initData = Telegram.WebApp.initData || '';
     const initDataUnsafe = Telegram.WebApp.initDataUnsafe || {};
 
-    document.querySelector('#greeting').innerHTML = `Добро пожаловать, ${initDataUnsafe.user.first_name}!\nВ данном меню Вы можете забронировать товар`;
-    document.querySelector('#initData').innerHTML = JSON.stringify(initData, null, 2);
+    document.querySelector('#greeting').innerHTML = `Добро пожаловать, ${initDataUnsafe.user.first_name}!`;
+    document.querySelector('#info').innerHTML = `В данном меню Вы можете забронировать товар`;
+
+    // document.querySelector('#initData').innerHTML = JSON.stringify(initData, null, 2);
     document.querySelector('#initDataUnsafe').innerHTML = JSON.stringify(initDataUnsafe, null, 2);
     document.querySelector('#themeData').html(JSON.stringify(Telegram.WebApp.themeParams, null, 2));
 
