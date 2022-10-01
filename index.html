@@ -186,10 +186,6 @@
   <h1 id="info"></h1>
 
     <div id="buttons">
-        <button onclick="webviewExpand();">Expand Webview</button>
-        <small>(The window goes fullscreen)</small>
-        <button onclick="toggleMainButton(this);">Hide Main Button</button>
-        <small>(It hides/shows main button)</small>
         <button id="btnTime" onclick="sendTime(10);">Send time</button>
         <small>(The bot will recieve a message with filled <code>web_app_data</code> field)</small>
     </div>
@@ -242,38 +238,26 @@
     Telegram.WebApp.MainButton
         .setText('CLOSE WEBVIEW')
         .show()
-        .onClick(function(){ webviewClose(); });
+        .onClick(Telegram.WebApp.close());
 
     Telegram.WebApp.onEvent('themeChanged', function() {
         document.querySelector('#themeData').innerHTML = JSON.stringify(Telegram.WebApp.themeParams, null, 2);
     });
 
-    function toggleMainButton(el) {
-        const mainButton = Telegram.WebApp.MainButton;
-        if (mainButton.isVisible) {
-            mainButton.hide();
-            el.innerHTML = 'Show Main Button';
-        } else {
-            mainButton.show();
-            el.innerHTML = 'Hide Main Button';
-        }
-    }
-
-    function webviewExpand() {
-        Telegram.WebApp.expand();
-    }
-
+    // Закрытие вебапп
     function webviewClose() {
         Telegram.WebApp.close();
     }
 
+    // Отправка данных боту
     function sendTime(spam) {
         const repeat = spam ? 10 : 1;
         for (let i = 0; i < repeat; i++) {
             Telegram.WebApp.sendData(new Date().toString());
         }
     }
-
+    
+    // Получение геолокации юзера
     function requestLocation() {
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(function (position) {
@@ -283,28 +267,6 @@
             document.querySelector('#locationData').innerHTML = '(Geolocation is not supported in this browser)';
         }
 
-        return false;
-    }
-
-    function requestVideo() {
-        if (navigator.mediaDevices) {
-            navigator.mediaDevices.getUserMedia({ audio: false, video: true }).then(function(stream) {
-                document.querySelector('#videoData').innerHTML = '(Access granted)';
-            });
-        } else {
-            document.querySelector('#videoData').innerHTML = '(Media devices is not supported in this browser)';
-        }
-        return false;
-    }
-
-    function requestAudio() {
-        if (navigator.mediaDevices) {
-            navigator.mediaDevices.getUserMedia({ audio: true, video: false }).then(function(stream) {
-                document.querySelector('#audioData').innerHTML = '(Access granted)';
-            });
-        } else {
-            document.querySelector('#audioData').innerHTML = '(Media devices is not supported in this browser)';
-        }
         return false;
     }
 </script>
