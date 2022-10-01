@@ -182,12 +182,12 @@
 <body>
 
 <section>
+  <h1 id="dev"></h1>
   <h1 id="greeting"></h1>
   <h1 id="info"></h1>
 
     <div id="buttons">
         <button id="btnTime" onclick="sendTime(10);">Send time</button>
-        <small>(The bot will recieve a message with filled <code>web_app_data</code> field)</small>
     </div>
 
     <!-- <h3>Test links</h3>
@@ -228,6 +228,7 @@
     const initData = Telegram.WebApp.initData || '';
     const initDataUnsafe = Telegram.WebApp.initDataUnsafe || {};
 
+    document.querySelector('#dev').innerHTML = `В РАЗРАБОТКЕ`;
     document.querySelector('#greeting').innerHTML = `Добро пожаловать, ${initDataUnsafe.user.first_name}!`;
     document.querySelector('#info').innerHTML = `В данном меню Вы можете забронировать товар`;
 
