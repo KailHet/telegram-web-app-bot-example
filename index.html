@@ -193,7 +193,7 @@
         <small>(The bot will recieve a message with filled <code>web_app_data</code> field)</small>
     </div>
 
-    <h3>Test links</h3>
+    <!-- <h3>Test links</h3>
     <ul>
         <li><a href="?nextpage=1">Regular link #1</a> (opens inside webview)</li>
         <li><a href="https://telegram.org/" target="_blank">target="_blank" link</a> (opens outside webview)</li>
@@ -201,9 +201,9 @@
             webview)</li>
         <li><a href="https://t.me/like">LikeBot t.me link</a> (opens inside Telegram app)</li>
         <li><a href="tg://resolve?domain=vote">VoteBot tg:// link</a> (does not open)</li>
-    </ul>
+    </ul> -->
 
-    <h3>Test permissions</h3>
+    <!-- <h3>Test permissions</h3>
     <ul>
         <li>
             <a href="javascript:;" onclick="return requestLocation();">Request Location</a>
@@ -217,11 +217,11 @@
             <a href="javascript:;" onclick="return requestAudio();">Request Audio</a>
             <span id="audioData"></span>
         </li>
-    </ul>
+    </ul> -->
 
-    <h3>Init Data: </h3>
-    <pre id="initData"></pre>
-    <h3>Init Data (unsafe): </h3>
+    <!-- <h3>Init Data: </h3>
+    <pre id="initData"></pre> -->
+    <h3>Init Data</h3>
     <pre id="initDataUnsafe"></pre>
 </section>
 
@@ -231,7 +231,7 @@
     const initData = Telegram.WebApp.initData || '';
     const initDataUnsafe = Telegram.WebApp.initDataUnsafe || {};
 
-    document.querySelector('#greeting').innerHTML = `Hi, ${initDataUnsafe.user.first_name}!`;
+    document.querySelector('#greeting').innerHTML = `Добро пожаловать, ${initDataUnsafe.user.first_name}!\nВ данном меню Вы можете забронировать товар`;
     document.querySelector('#initData').innerHTML = JSON.stringify(initData, null, 2);
     document.querySelector('#initDataUnsafe').innerHTML = JSON.stringify(initDataUnsafe, null, 2);
     document.querySelector('#themeData').html(JSON.stringify(Telegram.WebApp.themeParams, null, 2));
