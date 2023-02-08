@@ -24,7 +24,19 @@ body {
   text-align: center;
 }
 
+.counter {
+  display: inline-block;
+  padding: 6px 20px;
+  border: none;
+  background: rgb(160, 160, 160);
+  border-radius: 10px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 1000;
+  font-family: Arial;
 
+  transition: background .2s linear;
+}
 
 .item-name {
   padding: -10px;
@@ -51,6 +63,10 @@ body {
 
 .btn:hover {
   background: #b07d2b;
+}
+
+.btn:active{
+  background: rgb(248, 168, 24);
 }
 
 .usercard {
