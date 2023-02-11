@@ -25,6 +25,10 @@ body {
   text-align: center;
 }
 
+.bucket {
+  display: none;
+}
+
 .counter {
   position: absolute;
   /* left: 130px; */
@@ -60,14 +64,6 @@ body {
 .btn-rem {
   width: 35px;
   height: 35px;
-}
-
-.btn:hover {
-  background: #b07d2b;
-}
-
-.btn:active{
-  background: rgb(248, 168, 24);
 }
 
 .usercard {

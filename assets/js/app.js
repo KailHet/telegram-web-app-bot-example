@@ -10,41 +10,49 @@ let item = "";
 
 let count = 0; // count of items in cart
 
-function btnRem(id) {
-  // let btnsm = document.querySelectorAll(".btn-rem")
-  let counters = document.querySelectorAll(".counter")
+let counters = document.querySelectorAll(".counter")
+let bucket = document.getElementById("bucket")
 
-  // for (let i = 0; i < counters.length; i++) {
-    if (counters[id].textContent !== `0`) {
-      count -= 1;
-      counters[id].textContent = Number(counters[id].textContent) - 1;
-    } else if (Number(counters[id].textContent) <= 0) {
-      counters[id].style.display = "none";
+
+function checkCounter(id) {
+  for (let i = 0; i < counters.length; i++) {
+    if (counters[id].textContent == "0") {
+      counters[i].style.display = "none";
     }
-    // item = "1"
-    if (count == 0) {
-      // counters[i].style.display = "none";
-      tg.MainButton.hide()
-    }
-  // }
+  }
+}
+
+function btnRem(id) {
+  if (counters[id].textContent !== `0`) {
+    count -= 1;
+    counters[id].textContent = Number(counters[id].textContent) - 1;
+  }
+
+  if (count == 0) {
+    tg.MainButton.hide()
+  }
+
+  checkCounter(id);
 }
 
 function btnAdd(id) {
-  // let btnsp = document.querySelectorAll(".btn-add")
-  let counters = document.querySelectorAll(".counter")
-
-  // for (let i = 0; i < counters.length; i++) {
     counters[id].textContent = Number(counters[id].textContent) + 1;
     counters[id].style.display = "inline-block";
     item = "1"
     tg.MainButton.show()
     count += 1;
-  // }
+}
+
+function editOrder() {
+  bucket.style.display = "none"
 }
 
 Telegram.WebApp.onEvent("mainButtonClicked", function () {
-  tg.sendData(item)
+  bucket.style.display = "grid"
+  // tg.sendData(item)
 })
+
+
 
 // let item_name = document.getElementById("item-name")
 // item_name.innerText = `asd`
