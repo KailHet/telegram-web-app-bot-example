@@ -17,6 +17,7 @@ body {
 }
 
 .img {
+  position: relative;
   width: 130px;
 }
 
@@ -25,14 +26,18 @@ body {
 }
 
 .counter {
-  display: inline-block;
-  padding: 6px 20px;
+  position: absolute;
+  /* left: 130px; */
+  /* width: 100%; */
+  display: none;
+  padding: 5px 10px;
   border: none;
-  background: rgb(160, 160, 160);
-  border-radius: 10px;
+  background: rgba(176,125,43, 0.9);
+  border-radius: 20px;
   color: #ffffff;
   text-transform: uppercase;
   font-weight: 1000;
+  font-size: 14px;
   font-family: Arial;
 
   transition: background .2s linear;
@@ -47,18 +52,14 @@ body {
   font-family: Arial;
 }
 
-.btn {
-  display: inline-block;
-  padding: 10px 20px;
-  border: none;
-  background: rgb(248, 168, 24);
-  border-radius: 10px;
-  color: #fff;
-  text-transform: uppercase;
-  font-weight: 1000;
-  font-family: Arial;
+.btn-add {
+  width: 35px;
+  height: 35px;
+}
 
-  transition: background .2s linear;
+.btn-rem {
+  width: 35px;
+  height: 35px;
 }
 
 .btn:hover {
