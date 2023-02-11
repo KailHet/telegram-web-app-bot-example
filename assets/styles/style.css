@@ -16,6 +16,10 @@ body {
   grid-template-rows: 200px 200px 200px;
 }
 
+.editOrder {
+  text-align: right;
+}
+
 .img {
   position: relative;
   width: 130px;
