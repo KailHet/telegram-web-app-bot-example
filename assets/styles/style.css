@@ -8,6 +8,8 @@ body {
 
 .container {
   max-width: 390px;
+  font-size: 16px;
+  font-family: Comfortaa;
 }
 
 .inner {
@@ -18,7 +20,8 @@ body {
 
 .bucket-top {
   /* background: green; */
-  padding: 10px 10px;
+  /* padding: 10px 10px; */
+  text-align: left;
   font-size: 20px;
   font-family: Comfortaa;
   /* color: var(--tg-theme-text-color); */
@@ -59,6 +62,18 @@ body {
   text-align: center;
 }
 
+.bitem {
+  text-align: right;
+  width: 100%;
+}
+
+.bimg {
+  /* padding-top: 10px; */
+  position:relative;
+  float: left;
+  width: 130px;
+}
+
 .bucket {
   display: none;
   width: auto;
@@ -70,7 +85,7 @@ body {
   bottom: 0;
   left: 0;
   margin: auto;
-  background: var(--tg-theme-bg-color);
+  background: grey; /* var(--tg-theme-bg-color); */
 
   transform: translateY(-150%);
   animation: bucketShowAnimation .3s forwards;
@@ -86,11 +101,19 @@ body {
   100% {transform: translateY(-150%);}
 }
 
+.bucketItem {
+  display: inline-block;
+  width: auto;
+  height: auto;
+}
+
 .counter {
   position: absolute;
   /* left: 130px; */
   /* width: 100%; */
+  /* right: 100px; */
   display: none;
+  /* margin-right: 50px; */
   padding: 5px 10px;
   border: none;
   background: rgba(176,125,43, 0.9);
@@ -128,11 +151,57 @@ body {
 .btn-add {
   width: 35px;
   height: 35px;
+  font-size: 30px;
+  font-weight: 1000;
+  text-align: center;
+  align-content: center;
+  padding: 0;
+  /* vertical-align: middle; */
+  /* display: block;
+  margin-left: auto;
+  margin-right: auto; */
+  font-family: Comfortaa;
+  color: #ffffff;
+  background-color: rgba(176,125,43, 1);;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+
+.btn-add:hover {
+  background-color: rgba(176,125,43, 0.9);
+  cursor: pointer;
+}
+
+.btn-add:active {
+  background-color: rgba(176,125,43, 1);;
 }
 
 .btn-rem {
   width: 35px;
   height: 35px;
+  font-size: 30px;
+  font-weight: 1000;
+  text-align: center;
+  padding: 0;
+  /* display: block;
+  margin-left: auto;
+  margin-right: auto; */
+  font-family: Comfortaa;
+  color: #ffffff;
+  background-color: red;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+
+.btn-rem:hover {
+  background-color: rgba(255, 0, 0, 0.8);
+  cursor: pointer;
+}
+
+.btn-rem:active {
+  background-color: red;
 }
 
 .usercard {
