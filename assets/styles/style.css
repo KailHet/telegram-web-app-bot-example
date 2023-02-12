@@ -22,7 +22,7 @@ body {
   font-size: 20px;
   font-family: Comfortaa;
   color: var(--tg-theme-text-color);
-  background: var(--tg-theme-bg-color);
+  /* background: var(--tg-theme-bg-color); */
 }
 
 .editOrder {
@@ -70,7 +70,7 @@ body {
   bottom: 0;
   left: 0;
   margin: auto;
-  background: #fff; /*var(--tg-theme-bg-color);*/
+  background: var(--tg-theme-bg-color); /*var(--tg-theme-bg-color);*/
 
   transform: translateY(-150%);
   animation: bucketShowAnimation .3s forwards;
