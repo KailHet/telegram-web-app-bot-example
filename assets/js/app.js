@@ -46,15 +46,20 @@ function btnAdd(id) {
   count += 1;
 
   if (items.includes(`${id} - `)) items.splice(items.indexOf(id)-1, 1)
-  items.push(`${id} - ${counters[id].textContent}`)
+  items.push({
+    id: id,
+    name: `${tg.initDataUnsafe.first_name} ${tg.initDataUnsafe.last_name}`,
+    price: Number(tg.initDataUnsafe.price),
+    count: counters[id].textContent
+  })
 
 
-  if (counters[id].textContent == `1`) {
-    let bucketItems = document.getElementById("bucketList")
-    bucketItems.innerText = items.join(`\n`)
-    bucket.style.animation = "bucketShowAnimation .3s forwards"
-    bucket.style.display = "block";
-  }
+  // if (counters[id].textContent == `1`) {
+  //   let bucketItems = document.getElementById("bucketList")
+  //   bucketItems.innerText = items.join(`\n`)
+  //   bucket.style.animation = "bucketShowAnimation .3s forwards"
+  //   bucket.style.display = "block";
+  // }
 }
 
 function editOrder() {
@@ -63,8 +68,10 @@ function editOrder() {
 }
 
 Telegram.WebApp.onEvent("mainButtonClicked", function () {
+  let bucketItems = document.getElementById("bucketList")
+  bucketItems.innerText = items.join(`\n`)
   bucket.style.animation = "bucketShowAnimation .3s forwards"
-  bucket.style.display = "block"
+  bucket.style.display = "block";
   // tg.sendData(item)
 })
 

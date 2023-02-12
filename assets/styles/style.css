@@ -21,13 +21,15 @@ body {
   padding: 10px 10px;
   font-size: 20px;
   font-family: Comfortaa;
+  color: var(--tg-theme-text-color);
+  background: var(--tg-theme-bg-color);
 }
 
 .editOrder {
   text-align: right;
   border: none;
   float: right;
-  color: white;
+  color: var(--tg-theme-text-color);
   background: rgba(176,125,43, 0.9);
   padding: 10px 15px;
   border-radius: 10px;
