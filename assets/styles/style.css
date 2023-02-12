@@ -21,7 +21,7 @@ body {
   padding: 10px 10px;
   font-size: 20px;
   font-family: Comfortaa;
-  color: var(--tg-theme-text-color);
+  /* color: var(--tg-theme-text-color); */
   /* background: var(--tg-theme-bg-color); */
 }
 
@@ -29,7 +29,7 @@ body {
   text-align: right;
   border: none;
   float: right;
-  color: var(--tg-theme-text-color);
+  /* color: var(--tg-theme-text-color); */
   background: rgba(176,125,43, 0.9);
   padding: 10px 15px;
   border-radius: 10px;
@@ -70,7 +70,7 @@ body {
   bottom: 0;
   left: 0;
   margin: auto;
-  background: var(--tg-theme-bg-color); /*var(--tg-theme-bg-color);*/
+  /* background: var(--tg-theme-bg-color); */
 
   transform: translateY(-150%);
   animation: bucketShowAnimation .3s forwards;
@@ -95,7 +95,7 @@ body {
   border: none;
   background: rgba(176,125,43, 0.9);
   border-radius: 20px;
-  color: #ffffff;
+  /* color: #ffffff; */
   text-transform: uppercase;
   font-weight: 1000;
   font-size: 14px;
