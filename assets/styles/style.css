@@ -16,8 +16,36 @@ body {
   grid-template-rows: 200px 200px 200px;
 }
 
+.bucket-top {
+  /* background: green; */
+  padding: 10px 10px;
+  font-size: 20px;
+  font-family: Comfortaa;
+}
+
 .editOrder {
   text-align: right;
+  border: none;
+  float: right;
+  color: white;
+  background: rgba(176,125,43, 0.9);
+  padding: 10px 15px;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: Comfortaa;
+}
+
+.editOrder:hover {
+  background: rgba(176,125,43, 0.7);  
+}
+
+.editOrder:active {
+  background: rgba(176,125,43, 0.9); 
+  
+  transition: background .2s linear;
 }
 
 .img {
@@ -31,6 +59,29 @@ body {
 
 .bucket {
   display: none;
+  width: auto;
+  height: auto;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  background: #fff; /*var(--tg-theme-bg-color);*/
+
+  transform: translateY(-150%);
+  animation: bucketShowAnimation .3s forwards;
+}
+
+@keyframes bucketShowAnimation {
+  0% {transform: translateY(-150%);}
+  100% {transform: translateY(0);}
+}
+
+@keyframes bucketHideAnimation {
+  0% {transform: translateY(0);}
+  100% {transform: translateY(-150%);}
 }
 
 .counter {
@@ -48,7 +99,19 @@ body {
   font-size: 14px;
   font-family: Arial;
 
-  transition: background .2s linear;
+  opacity: 0;
+  animation: counterShowAnimation .2s forwards;
+  /* transition: display .2s linear; */
+}
+
+@keyframes counterShowAnimation {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes counterHideAnimation {
+  100% {opacity: 0;}
+  0% {opacity: 1;}
 }
 
 .item-name {

@@ -6,7 +6,7 @@ tg.MainButton.textColor = "#FFFFFF";
 tg.MainButton.color = "#2cab37";
 tg.MainButton.setText(`Корзина`);
 
-let item = "";
+let items = [];
 
 let count = 0; // count of items in cart
 
@@ -17,12 +17,15 @@ let bucket = document.getElementById("bucket")
 function checkCounter(id) {
   for (let i = 0; i < counters.length; i++) {
     if (counters[id].textContent == "0") {
-      counters[i].style.display = "none";
+      // counters[id].style.display = "none";
+      counters[id].style.animation = "counterHideAnimation .2s forwards";
     }
   }
 }
 
 function btnRem(id) {
+  items.splice(items.indexOf(id)-1, 1);
+  
   if (counters[id].textContent !== `0`) {
     count -= 1;
     counters[id].textContent = Number(counters[id].textContent) - 1;
@@ -36,19 +39,32 @@ function btnRem(id) {
 }
 
 function btnAdd(id) {
-    counters[id].textContent = Number(counters[id].textContent) + 1;
-    counters[id].style.display = "inline-block";
-    item = "1"
-    tg.MainButton.show()
-    count += 1;
+  counters[id].style.animation = "counterShowAnimation .2s forwards";
+  counters[id].textContent = Number(counters[id].textContent) + 1;
+  counters[id].style.display = "inline-block";
+  tg.MainButton.show()
+  count += 1;
+
+  if (items.includes(`${id} - `)) items.splice(items.indexOf(id)-1, 1)
+  items.push(`${id} - ${counters[id].textContent}`)
+
+
+  if (counters[id].textContent == `1`) {
+    let bucketItems = document.getElementById("bucketList")
+    bucketItems.innerText = items.join(`\n`)
+    bucket.style.animation = "bucketShowAnimation .3s forwards"
+    bucket.style.display = "block";
+  }
 }
 
 function editOrder() {
-  bucket.style.display = "none"
+  bucket.style.animation = "bucketHideAnimation .3s forwards"
+  // bucket.style.display = "none";
 }
 
 Telegram.WebApp.onEvent("mainButtonClicked", function () {
-  bucket.style.display = "grid"
+  bucket.style.animation = "bucketShowAnimation .3s forwards"
+  bucket.style.display = "block"
   // tg.sendData(item)
 })
 
