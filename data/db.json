@@ -1,0 +1,371 @@
+{
+    "shop": {
+        "admins": [
+            "741945004",
+            "690847130"
+        ],
+        "settings": {
+            "reserve_time": "3"
+        },
+        "products": {
+            "vape": [],
+            "pod": [],
+            "vaporizer": [
+                {
+                    "maker": "GEEK VAPE",
+                    "name": "B0.4 COIL [MESH 0.4om 25-35W]",
+                    "price": "250",
+                    "count": {
+                        "all": "0",
+                        "available": 0,
+                        "reserved": 0
+                    }
+                }
+            ],
+            "liquids": [
+                {
+                    "maker": "VOODOO LAB",
+                    "name": "HUSKY PREMIUM [30ML 20MG STRONG] (BLOOD BOY)",
+                    "price": "400",
+                    "count": {
+                        "all": 1,
+                        "available": 1,
+                        "reserved": 0
+                    }
+                },
+                {
+                    "maker": "VOODOO LAB",
+                    "name": "HUSKY WHITE [30ML 20MG STRONG] (MINT WIND)",
+                    "price": "350",
+                    "count": {
+                        "all": "0",
+                        "available": 0,
+                        "reserved": 0
+                    }
+                },
+                {
+                    "maker": "VOODOO LAB",
+                    "name": "HUSKY WHITE [30ML 20MG STRONG] (CHEW PEAK)",
+                    "price": "350",
+                    "count": {
+                        "all": "0",
+                        "available": 0,
+                        "reserved": 0
+                    }
+                },
+                {
+                    "maker": "VOODOO LAB",
+                    "name": "HUSKY WHITE [30ML 20MG STRONG] (SWEET VALE)",
+                    "price": "350",
+                    "count": {
+                        "all": 1,
+                        "available": 1,
+                        "reserved": 0
+                    }
+                },
+                {
+                    "maker": "PRIDE VAPE",
+                    "name": "МИШКА [30ML 20MG STRONG] (ЧАЙ - СМОРОДИНА - ЛИМОН)",
+                    "price": "350",
+                    "count": {
+                        "all": "0",
+                        "available": 0,
+                        "reserved": 0
+                    }
+                },
+                {
+                    "maker": "PRIDE VAPE",
+                    "name": "МИШКА V2 [30ML 20MG STRONG] (МАНГО - МАРАКУЙЯ)",
+                    "price": "350",
+                    "count": {
+                        "all": "0",
+                        "available": 0,
+                        "reserved": 0
+                    }
+                },
+                {
+                    "maker": "PRIDE VAPE",
+                    "name": "МИШКА V2 [30ML 20MG STRONG] (КРЕМОВЫЙ ТАБАК)",
+                    "price": "350",
+                    "count": {
+                        "all": "0",
+                        "available": 0,
+                        "reserved": 0
+                    }
+                },
+                {
+                    "maker": "PROTEST",
+                    "name": "dИЧb demon  [30ML 20MG HARD] (бергамот малина арбуз дыня)",
+                    "price": "350",
+                    "count": {
+                        "all": 1,
+                        "available": 1,
+                        "reserved": 0
+                    }
+                },
+                {
+                    "maker": "PROTEST",
+                    "name": "dИЧb classic  [30ML 20MG HARD] (бергамот мандарин смородина)",
+                    "price": "350",
+                    "count": {
+                        "all": 1,
+                        "available": 1,
+                        "reserved": 0
+                    }
+                },
+                {
+                    "maker": "PROTEST",
+                    "name": "PHOBIA clown  [30ML 20MG HARD] (чай из лесных ягод с малиновым вареньем)",
+                    "price": "350",
+                    "count": {
+                        "all": 1,
+                        "available": 1,
+                        "reserved": 0
+                    }
+                },
+                {
+                    "maker": "PROTEST",
+                    "name": "PHOBIA madness  [30ML 20MG HARD] (необычное сочетание трав и сочного манго)",
+                    "price": "350",
+                    "count": {
+                        "all": 1,
+                        "available": 1,
+                        "reserved": 0
+                    }
+                }
+            ],
+            "hqd": [
+                {
+                    "maker": "EXO RUMBLER",
+                    "name": "3500 затяжек (МАРАКУЙЯ)",
+                    "price": "650",
+                    "count": {
+                        "all": "0",
+                        "available": 0,
+                        "reserved": 0
+                    }
+                },
+                {
+                    "maker": "EXO RUMBLER",
+                    "name": "3500 затяжек (КЛУБНИЧНЫЙ ДАЙКИРИ) ",
+                    "price": "650",
+                    "count": {
+                        "all": "0",
+                        "available": 0,
+                        "reserved": 0
+                    }
+                },
+                {
+                    "maker": "EXO RUMBLER",
+                    "name": "3500 затяжек (ЙОГУРТ С ФРУКТАМИ ДРАКОНА)",
+                    "price": "650",
+                    "count": {
+                        "all": 1,
+                        "available": 1,
+                        "reserved": 0
+                    }
+                },
+                {
+                    "maker": "SUPSMOK DUNKE",
+                    "name": "1200 затяжек [перезаряжаемый] (ЛЕДЯНОЙ ВИНОГРАД)",
+                    "price": "450",
+                    "count": {
+                        "all": 1,
+                        "available": 1,
+                        "reserved": 0
+                    }
+                },
+                {
+                    "maker": "SUPSMOK DUNKE",
+                    "name": "1200 затяжек [перезаряжаемый] (МАНГО МАРАКУЙЯ АПЕЛЬСИН)",
+                    "price": "450",
+                    "count": {
+                        "all": 1,
+                        "available": 1,
+                        "reserved": 0
+                    }
+                },
+                {
+                    "maker": "SUPSMOK DUNKE",
+                    "name": "1200 затяжек [перезаряжаемый] (ЛЕДЯНОЙ ФРУКТОВЫЙ КОКТЕЙЛЬ)",
+                    "price": "450",
+                    "count": {
+                        "all": 1,
+                        "available": 0,
+                        "reserved": 1
+                    }
+                },
+                {
+                    "maker": "SUPSMOK DUNKE",
+                    "name": "1200 затяжек [перезаряжаемый] (ПИНА КОЛАДА)",
+                    "price": "450",
+                    "count": {
+                        "all": 1,
+                        "available": 1,
+                        "reserved": 0
+                    }
+                },
+                {
+                    "maker": "UDN CASINO",
+                    "name": "5000 затяжек [перезаряжаемый] (BLUE CLOUD)",
+                    "price": "750",
+                    "count": {
+                        "all": "0",
+                        "available": 0,
+                        "reserved": 0
+                    }
+                },
+                {
+                    "maker": "UDN CASINO",
+                    "name": "5000 затяжек [перезаряжаемый] (GUMMY)",
+                    "price": "750",
+                    "count": {
+                        "all": "0",
+                        "available": 0,
+                        "reserved": 0
+                    }
+                },
+                {
+                    "maker": "UDN CASINO",
+                    "name": "5000 затяжек [перезаряжаемый] (JUICY CHERRY)",
+                    "price": "750",
+                    "count": {
+                        "all": "0",
+                        "available": 0,
+                        "reserved": 0
+                    }
+                },
+                {
+                    "maker": "UDN CASINO",
+                    "name": "5000 затяжек [перезаряжаемый] (PINEAPPLE LEMONADE)",
+                    "price": "750",
+                    "count": {
+                        "all": "0",
+                        "available": 0,
+                        "reserved": 0
+                    }
+                },
+                {
+                    "maker": "ELFBAR",
+                    "name": "BC LIMITED EDITION 4000 затяжек [перезаряжаемый] (GRAPE ENERGY)",
+                    "price": "1000",
+                    "count": {
+                        "all": "0",
+                        "available": 0,
+                        "reserved": 0
+                    }
+                },
+                {
+                    "maker": "ELFBAR",
+                    "name": "BC LIMITED EDITION 4000 затяжек [перезаряжаемый] (TARO ICE CREAM)",
+                    "price": "1000",
+                    "count": {
+                        "all": 1,
+                        "available": 1,
+                        "reserved": 0
+                    }
+                },
+                {
+                    "maker": "ELFBAR",
+                    "name": "BC LIMITED EDITION 4000 затяжек [перезаряжаемый] (CRANBERRY GRAPE)",
+                    "price": "1000",
+                    "count": {
+                        "all": 1,
+                        "available": 0,
+                        "reserved": 1
+                    }
+                },
+                {
+                    "maker": "ELFBAR",
+                    "name": "BC LIMITED EDITION 4000 затяжек [перезаряжаемый] (BLACKCURRANT RIBENA ICE)",
+                    "price": "1000",
+                    "count": {
+                        "all": "0",
+                        "available": 0,
+                        "reserved": 0
+                    }
+                },
+                {
+                    "maker": "ELFBAR",
+                    "name": "BC LIMITED EDITION 4000 затяжек [перезаряжаемый] (MOCHA CHOCOLATE)",
+                    "price": "1000",
+                    "count": {
+                        "all": "0",
+                        "available": 0,
+                        "reserved": 0
+                    }
+                },
+                {
+                    "maker": "ELFBAR",
+                    "name": "BC LIMITED EDITION 4000 затяжек [перезаряжаемый] (STRAWBERRY ICE)",
+                    "price": "1000",
+                    "count": {
+                        "all": 1,
+                        "available": 1,
+                        "reserved": 0
+                    }
+                },
+                {
+                    "maker": "ELFBAR",
+                    "name": "BC LIMITED EDITION 4000 затяжек [перезаряжаемый] (JUICY PEACH)",
+                    "price": "1000",
+                    "count": {
+                        "all": 1,
+                        "available": 1,
+                        "reserved": 0
+                    }
+                },
+                {
+                    "maker": "ELFBAR",
+                    "name": "BC  4000 затяжек [перезаряжаемый] (RED MOJITO)",
+                    "price": "1000",
+                    "count": {
+                        "all": 1,
+                        "available": 1,
+                        "reserved": 0
+                    }
+                },
+                {
+                    "maker": "ELFBAR",
+                    "name": "BC  4000 затяжек [перезаряжаемый] (ENERGY)",
+                    "price": "1000",
+                    "count": {
+                        "all": 1,
+                        "available": 1,
+                        "reserved": 0
+                    }
+                },
+                {
+                    "maker": "ELFBAR",
+                    "name": "BC  4000 затяжек [перезаряжаемый] (KIWI PASSION FRUIT GUAVA)",
+                    "price": "1000",
+                    "count": {
+                        "all": 1,
+                        "available": 1,
+                        "reserved": 0
+                    }
+                },
+                {
+                    "maker": "UDN",
+                    "name": "BAR  6000 затяжек [перезаряжаемый] (KIWI FRUIT)",
+                    "price": "1100",
+                    "count": {
+                        "all": 1,
+                        "available": 1,
+                        "reserved": 0
+                    }
+                },
+                {
+                    "maker": "UDN",
+                    "name": "BAR  6000 затяжек [перезаряжаемый] (BANANA MELON)",
+                    "price": "1100",
+                    "count": {
+                        "all": 1,
+                        "available": 1,
+                        "reserved": 0
+                    }
+                }
+            ]
+        }
+    }
+}
